@@ -57,7 +57,12 @@ class array():
         l=lst
         return l
 obj=array()
-lst=[1,2,3,4,5]
+lst=[]#list is created
+length=int(input("Enter A Length Of A List:"))#length of list 
+print("Enter The List Elements:")#for user to give values
+for i in range(length):
+    values=int(input())#values are getten
+    lst.append(values)#adding to list
 c='y'
 while(c=='y'):
     print("Enter '1' for insert a value in a list at start")
@@ -126,6 +131,7 @@ while(c=='y'):
         print(res)
     print("------------------------------------------------------------------------------------------")
     c=input("To Continue The Above Function Press 'y' If not press 'n':")
+print("Program Exit")
 
 
 

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Thala Crt Ya Login Panu</title>
+</head>
+<body>
+    <label>User Name</label><br><input type="text" placeholder="Username nu sonala..." id="myInput"><br><br>
+    <label>Password</label><br><input type="password" placeholder="passwaor nu sonala..." id="myInput1"><br><br><br>
+    <button type="button" onclick="getInputValue();">Login</button>
+    
+    <script>
+        function getInputValue(){
+            // Selecting the input element and get its value 
+            var inputVal = document.getElementById("myInput").value;
+            var inputVal1 = document.getElementById("myInput1").value;
+            
+            // Displaying the value
+            if(inputVal=="Thala" && inputVal1=="Thala@123"){
+                window.location="index1.html"
+            }
+            else{
+                alert("Username password kudu olunga poda thrla la neelam oru alu ")
+            }
+        }
+    </script>
+</body>
+</html>
